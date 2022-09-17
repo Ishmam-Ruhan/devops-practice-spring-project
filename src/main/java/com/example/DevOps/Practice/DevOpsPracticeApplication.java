@@ -15,7 +15,7 @@ public class DevOpsPracticeApplication {
 		return "Hey! Welcome dev-ops practice! I'm from system. Whats your name?";
 	}
 
-	@GetMapping("/name")
+	@GetMapping("/name/{name}")
 	public String sayName(@PathVariable String name){
 		return "Wow.! Nice name "+name+"\n  Let's explore more!";
 	}
