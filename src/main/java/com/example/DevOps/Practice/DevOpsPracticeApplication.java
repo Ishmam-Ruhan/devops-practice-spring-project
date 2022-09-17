@@ -17,7 +17,12 @@ public class DevOpsPracticeApplication {
 
 	@GetMapping("/name/{name}")
 	public String sayName(@PathVariable String name){
-		return "Wow.! Nice name "+name+"\n  Let's explore more!";
+		return "Wow.! Nice name "+name+"\n ! Let's explore more! Tell me about your age.";
+	}
+	
+	@GetMapping("/name/age/{age}")
+	public String sayAge(@PathVariable int age){
+		return "Wow.! Youre perfect!";
 	}
 
 
